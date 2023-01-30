@@ -1,0 +1,8 @@
+<div class="main-page-content">
+    <div class="left-side">
+        <app-sidebar [posts]="favoritesPosts" (onDeleteFromFavorites)="deleteFromFavoritesHandler($event)"></app-sidebar>
+    </div>
+    <div class="right-side">
+        <app-recommendations-list [posts]="recommendedPosts" (onAddToFavorites)="addToFavoritesHandler($event)"></app-recommendations-list>
+    </div>
+</div>
